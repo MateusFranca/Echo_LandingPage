@@ -222,14 +222,15 @@ body::-webkit-scrollbar-thumb {
         align-items: center;
         width: 80%;
 
-        .img-sobre {
+        .img-box {
           border-radius: 10px;
+          background: url(/img/photo-1600195077909-46e573870d99.avif);
           background-position: center;
           background-size: cover;
-          min-width: 400px;
-          min-height: 400px;
-          max-width: 400px;
-          max-height: 400px;
+          min-width: 350px;
+          min-height: 350px;
+          max-width: 350px;
+          max-height: 350px;
 
           @include d(tv) {
             min-width: 450px;
@@ -239,10 +240,10 @@ body::-webkit-scrollbar-thumb {
           }
 
           @include d(m) {
-            min-width: 300px;
-            min-height: 300px;
-            max-width: 300px;
-            max-height: 300px;
+            min-width: 250px;
+            min-height: 250px;
+            max-width: 250px;
+            max-height: 250px;
           }
         }
 
