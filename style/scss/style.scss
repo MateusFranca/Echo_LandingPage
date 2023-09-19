@@ -231,6 +231,7 @@ body::-webkit-scrollbar-thumb {
           min-height: 350px;
           max-width: 350px;
           max-height: 350px;
+          z-index: 2;
 
           @include d(tv) {
             min-width: 450px;
