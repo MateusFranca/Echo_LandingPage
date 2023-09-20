@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   background: linear-gradient(180deg, #000 0%, #14012d 100%);
   width: 100%;
-  height: 90vh;
+  height: 110vh;
 }
 
 #section-1 header {
@@ -107,7 +107,7 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 639px) {
   #section-1 container-1 {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 }
 
