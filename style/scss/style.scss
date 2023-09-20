@@ -4,7 +4,7 @@
 
 @mixin d($dispositivo) {
   @if $dispositivo == tv {
-    @media only screen and (min-width: 800px) and (max-width: 1400px) {
+    @media only screen and (min-width: 799px) and (max-width: 1400px) {
       @content;
     }
   } @else if $dispositivo == t {
@@ -50,7 +50,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   background: linear-gradient(180deg, #000 0%, #14012d 100%);
   width: 100%;
-  height: 100vh;
+  height: 110vh;
 
   header {
     display: flex;
@@ -58,8 +58,10 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     justify-content: space-between;
     max-width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
     @include d(m) {
-      height: 10rem;
+      height: 12rem;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -74,8 +76,7 @@ body::-webkit-scrollbar-thumb {
       gap: 3rem;
       @include d(m) {
         padding-top: 15px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-bottom: 20px;
         gap: 2rem;
         align-items: center;
         justify-content: center;
@@ -125,17 +126,17 @@ body::-webkit-scrollbar-thumb {
       font-size: 6rem;
       font-weight: 400;
       color: white;
+      padding-left: 20px;
       @include d(tv) {
         font-size: 3.8rem;
-        padding-left: 20px;
-        padding-right: 20px;
       }
       @include d(t) {
-        font-size: 3.5rem;
+        font-size: 3.2rem;
       }
 
       @include d(m) {
         font-size: 2.5rem;
+        padding-left: 0;
         margin-bottom: 10px;
       }
 
@@ -150,17 +151,17 @@ body::-webkit-scrollbar-thumb {
     img {
       animation: flutuar 5s infinite ease-in-out;
       filter: drop-shadow(0px 0px 0px rgb(149, 84, 255));
+      padding-right: 20px;
       @include d(tv) {
         max-width: 420px;
-        padding-left: 20px;
-        padding-right: 20px;
       }
       @include d(t) {
-        max-width: 350px;
+        max-width: 320px;
       }
       @include d(m) {
         max-width: 280px;
         margin-bottom: 20px;
+        padding-right: 0;
       }
     }
 
@@ -181,8 +182,7 @@ body::-webkit-scrollbar-thumb {
     animation: fadeInDown;
     animation-duration: 2s;
     max-width: 50px;
-    @include d(m)
-    {
+    @include d(m) {
       margin-bottom: 10px;
     }
   }
@@ -239,6 +239,10 @@ body::-webkit-scrollbar-thumb {
         align-items: center;
         width: 80%;
 
+        @include d(t) {
+          gap: 4rem;
+        } 
+
         .img-box {
           border-radius: 10px;
           background: url(../../img/photo-1600195077909-46e573870d99.avif);
@@ -271,7 +275,7 @@ body::-webkit-scrollbar-thumb {
           width: 50%;
 
           h1 {
-            font-size: 35px;  
+            font-size: 35px;
           }
 
           p {
@@ -300,9 +304,13 @@ body::-webkit-scrollbar-thumb {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 70%;
         border-radius: 10px;
         gap: 1rem;
+
+        @include d(m) {
+          width: 85%;
+        }
 
         .title-box {
           width: 70%;
@@ -411,6 +419,7 @@ body::-webkit-scrollbar-thumb {
       p {
         font-weight: 400;
         font-size: 18px;
+        max-width: 70ch;
       }
     }
   }
@@ -474,6 +483,12 @@ body::-webkit-scrollbar-thumb {
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
+
+        @include d(t) {
+          margin-top: 10px;
+          justify-content: space-evenly;
+        }
+
         @include d(m) {
           gap: 10px;
         }
@@ -506,6 +521,7 @@ body::-webkit-scrollbar-thumb {
             width: 100%;
           }
 
+          
 
           svg {
             max-width: 35px;
@@ -529,7 +545,7 @@ body::-webkit-scrollbar-thumb {
       }
 
       @include d(m) {
-        padding: 0.1rem 1rem;
+        padding: 0.01rem 1rem;
         svg {
           max-width: 50px;
         }
