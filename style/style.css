@@ -83,7 +83,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #section-1 header ul a li:hover {
-  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, #ed2dff 0px 0px 20px, #7d2dff 0px 0px 30px, #a02dff 0px 0px 40px, #a02dff 0px 0px 50px, #8f2dff 0px 0px 75px;
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, #ed2dff 0px 0px 20px, #7d2dff 0px 0px 30px, #a02dff 0px 0px 40px, #a02dff 0px 0px 50px, #8f2dff 0px 0px 75px;
 }
 
 #section-1 header img-box {
@@ -263,7 +263,7 @@ body::-webkit-scrollbar-thumb {
 
 #section-3 .container .container-content .box-1 .img-box {
   border-radius: 10px;
-  background: url("../../img/icone_logo.png");
+  background: url("../../img/photo-1600195077909-46e573870d99.avif");
   background-position: center;
   background-size: cover;
   min-width: 350px;
