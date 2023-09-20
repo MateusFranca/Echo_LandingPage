@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import "img";
 
 // Responsividade para cada tamanho de dispositivo:
 
@@ -60,9 +59,11 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     max-width: 1440px;
     @include d(m) {
+      height: 10rem;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
     }
 
     ul {
@@ -72,7 +73,12 @@ body::-webkit-scrollbar-thumb {
       flex-wrap: wrap;
       gap: 3rem;
       @include d(m) {
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
         gap: 2rem;
+        align-items: center;
+        justify-content: center;
       }
 
       a {
@@ -121,13 +127,16 @@ body::-webkit-scrollbar-thumb {
       color: white;
       @include d(tv) {
         font-size: 3.8rem;
+        padding-left: 20px;
+        padding-right: 20px;
       }
       @include d(t) {
         font-size: 3.5rem;
       }
 
       @include d(m) {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
       }
 
       span {
@@ -143,12 +152,15 @@ body::-webkit-scrollbar-thumb {
       filter: drop-shadow(0px 0px 0px rgb(149, 84, 255));
       @include d(tv) {
         max-width: 420px;
+        padding-left: 20px;
+        padding-right: 20px;
       }
       @include d(t) {
         max-width: 350px;
       }
       @include d(m) {
-        max-width: 300px;
+        max-width: 280px;
+        margin-bottom: 30px;
       }
     }
 
@@ -331,10 +343,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 #section-4 {
-  width: 100%;
+  max-width: 100%;
   background-color: white;
   padding-top: 10rem;
   padding-bottom: 10rem;
+  margin: 0 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -446,8 +459,8 @@ body::-webkit-scrollbar-thumb {
       }
 
       .box-1 {
-        justify-content: space-between;
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
         @include d(m) {
@@ -458,8 +471,11 @@ body::-webkit-scrollbar-thumb {
           a {
             svg {
               max-width: 70px;
+              margin: 15px 10px;
+              box-sizing: border-box;
               @include d(m) {
                 max-width: 60px;
+                box-sizing: border-box;
               }
             }
           }
@@ -473,6 +489,8 @@ body::-webkit-scrollbar-thumb {
           align-items: center;
 
           p {
+            display: flex;
+            flex-wrap: wrap;
             color: white;
             font-size: 20px;
             font-weight: 500;
@@ -492,6 +510,12 @@ body::-webkit-scrollbar-thumb {
       border: 2px solid #d55aff;
       background: linear-gradient(180deg, #000 0%, #14012d 100%);
       cursor: pointer;
+      margin-right: 20px;
+      margin-top: 15px;
+
+      @include d(t) {
+        margin-right: 0;
+      }
 
       @include d(m) {
         padding: 0.1rem 1rem;
