@@ -135,7 +135,7 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 639px) {
   #section-1 container-1 h1 {
     font-size: 2.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 
@@ -168,7 +168,7 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 639px) {
   #section-1 container-1 img {
     max-width: 280px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -187,6 +187,12 @@ body::-webkit-scrollbar-thumb {
   animation: fadeInDown;
   animation-duration: 2s;
   max-width: 50px;
+}
+
+@media only screen and (max-width: 639px) {
+  #section-1 .setinha {
+    margin-bottom: 10px;
+  }
 }
 
 #section-2 {
@@ -256,7 +262,6 @@ body::-webkit-scrollbar-thumb {
   min-height: 350px;
   max-width: 350px;
   max-height: 350px;
-  z-index: 2;
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1400px) {
@@ -310,7 +315,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 90%;
   border-radius: 10px;
   gap: 1rem;
 }
@@ -318,6 +323,14 @@ body::-webkit-scrollbar-thumb {
 #section-3 .container .container-content .box-2 .title-box {
   width: 70%;
   text-align: center;
+}
+
+@media only screen and (max-width: 639px) {
+  #section-3 .container .container-content .box-2 .title-box {
+    width: 90%;
+    text-align: left;
+    font-size: 14px;
+  }
 }
 
 #section-3 .container .container-content .box-2 .quetions-box {
@@ -356,6 +369,14 @@ body::-webkit-scrollbar-thumb {
 #section-3 .container .container-content .box-2 .quetions-box .quetion-2 p,
 #section-3 .container .container-content .box-2 .quetions-box .quetion-3 p {
   font-size: 20px;
+}
+
+@media only screen and (max-width: 639px) {
+  #section-3 .container .container-content .box-2 .quetions-box .quetion-1 p,
+  #section-3 .container .container-content .box-2 .quetions-box .quetion-2 p,
+  #section-3 .container .container-content .box-2 .quetions-box .quetion-3 p {
+    font-size: 16px;
+  }
 }
 
 #section-4 {
@@ -532,8 +553,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 #section-5 .container .social-box .box-2 .cotanto p {
-  display: flex;
-  flex-wrap: wrap;
   color: white;
   font-size: 20px;
   font-weight: 500;
@@ -542,6 +561,7 @@ body::-webkit-scrollbar-thumb {
 
 #section-5 .container .social-box .box-2 .cotanto svg {
   max-width: 35px;
+  margin-left: 15px;
 }
 
 #section-5 .container button {

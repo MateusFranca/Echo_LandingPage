@@ -136,7 +136,7 @@ body::-webkit-scrollbar-thumb {
 
       @include d(m) {
         font-size: 2.5rem;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
       }
 
       span {
@@ -160,7 +160,7 @@ body::-webkit-scrollbar-thumb {
       }
       @include d(m) {
         max-width: 280px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
     }
 
@@ -181,6 +181,10 @@ body::-webkit-scrollbar-thumb {
     animation: fadeInDown;
     animation-duration: 2s;
     max-width: 50px;
+    @include d(m)
+    {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -244,7 +248,6 @@ body::-webkit-scrollbar-thumb {
           min-height: 350px;
           max-width: 350px;
           max-height: 350px;
-          z-index: 2;
 
           @include d(tv) {
             min-width: 450px;
@@ -268,7 +271,7 @@ body::-webkit-scrollbar-thumb {
           width: 50%;
 
           h1 {
-            font-size: 35px;
+            font-size: 35px;  
           }
 
           p {
@@ -297,13 +300,18 @@ body::-webkit-scrollbar-thumb {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 70%;
+        width: 90%;
         border-radius: 10px;
         gap: 1rem;
 
         .title-box {
           width: 70%;
           text-align: center;
+          @include d(m) {
+            width: 90%;
+            text-align: left;
+            font-size: 14px;
+          }
         }
 
         .quetions-box {
@@ -334,6 +342,9 @@ body::-webkit-scrollbar-thumb {
 
             p {
               font-size: 20px;
+              @include d(m) {
+                font-size: 16px;
+              }
             }
           }
         }
@@ -489,16 +500,16 @@ body::-webkit-scrollbar-thumb {
           align-items: center;
 
           p {
-            display: flex;
-            flex-wrap: wrap;
             color: white;
             font-size: 20px;
             font-weight: 500;
             width: 100%;
           }
 
+
           svg {
             max-width: 35px;
+            margin-left: 15px;
           }
         }
       }
