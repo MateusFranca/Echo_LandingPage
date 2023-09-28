@@ -246,7 +246,7 @@ body::-webkit-scrollbar-thumb {
 
         .img-box {
           border-radius: 10px;
-          background: url("/img/photo-1600195077909-46e573870d99.avif");
+          background: url("/img/img-decorecao.png");
           background-position: center;
           background-size: cover;
           min-width: 350px;
@@ -254,7 +254,7 @@ body::-webkit-scrollbar-thumb {
           max-width: 350px;
           max-height: 350px;
 
-          @include d(tv) {
+          @include d(t) {
             min-width: 450px;
             min-height: 450px;
             max-width: 450px;
